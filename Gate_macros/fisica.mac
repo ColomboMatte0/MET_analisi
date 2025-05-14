@@ -1,0 +1,16 @@
+/gate/physics/addPhysicsList	emstandard_opt3
+
+
+#/gate/physics/Gamma/SetCutInRegion      world 1 km
+#/gate/physics/Electron/SetCutInRegion   world 1 km
+#/gate/physics/Positron/SetCutInRegion   world 1 km
+
+#/gate/physics/Gamma/SetCutInRegion      cristallo 0.33 mm
+#/gate/physics/Electron/SetCutInRegion   cristallo 0.33 mm
+#/gate/physics/Positron/SetCutInRegion   cristallo 0.33 mm
+
+
+/gate/physics/processList	Enabled
+/gate/physics/processList	Initialized
+
+

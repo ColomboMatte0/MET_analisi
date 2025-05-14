@@ -1,0 +1,35 @@
+# /gate/source/addSource	punto1
+# /gate/source/punto1/setActivity	10 MBq	
+# /gate/source/punto1/gps/centre	0 0 0 mm
+# /gate/source/punto1/gps/particle	 gamma
+# /gate/source/punto1/setType	 backtoback
+# /gate/source/punto1/setForcedUnstableFlag	true
+# /gate/source/punto1/gps/energytype	Mono
+# /gate/source/punto1/gps/monoenergy	511 keV
+# /gate/source/punto1/setForcedHalfLife	6586 s	
+# /gate/source/punto1/gps/angtype	iso
+# /gate/source/punto1/gps/mintheta	0 deg
+# /gate/source/punto1/gps/maxtheta	180 deg
+# /gate/source/punto1/gps/minphi	0 deg
+# /gate/source/punto1/gps/maxphi	360 deg
+# /gate/source/punto1/visualize	cyan
+# /gate/source/list
+
+/gate/source/addSource punto1
+/gate/source/punto1/setActivity 100 MBq
+
+/gate/source/punto1/gps/centre 0 0 0 mm
+/gate/source/punto1/gps/particle gamma
+
+/gate/source/punto1/gps/energytype Mono
+/gate/source/punto1/gps/monoenergy 511 keV
+
+/gate/source/punto1/gps/angtype iso
+/gate/source/punto1/gps/mintheta 0 deg
+/gate/source/punto1/gps/maxtheta 180 deg
+
+/gate/source/punto1/gps/minphi 0 deg
+/gate/source/punto1/gps/maxphi 360 deg
+
+/gate/source/punto1/gps/pos/type Point
+/gate/source/punto1/visualize cyan

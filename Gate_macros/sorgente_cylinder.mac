@@ -1,0 +1,11 @@
+/gate/source/addSource gamma gps
+/gate/source/gamma/gps/particle gamma
+/gate/source/gamma/gps/energytype Mono
+/gate/source/gamma/gps/monoenergy 511. keV
+/gate/source/gamma/gps/pos/type Volume
+/gate/source/gamma/gps/pos/shape Cylinder
+/gate/source/gamma/gps/pos/radius 90. mm
+/gate/source/gamma/gps/pos/halfz 50 mm
+/gate/source/gamma/gps/pos/centre 0. 0. 0. mm
+/gate/source/gamma/gps/angtype iso
+/gate/source/gamma/setActivity 200  MBq

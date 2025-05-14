@@ -1,0 +1,8 @@
+/gate/world/geometry/setXLength	50 cm
+/gate/world/geometry/setYLength	50 cm
+/gate/world/geometry/setZLength	50 cm
+#/gate/world/vis/setColor	white
+/gate/world/vis/forceWireframe
+/gate/world/setMaterial	Air
+
+

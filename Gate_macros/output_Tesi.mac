@@ -1,0 +1,20 @@
+/gate/actor/addActor	SimulationStatisticActor	MyActor
+/gate/actor/MyActor/save	stat.txt
+
+/gate/output/ascii/enable
+/gate/output/ascii/setFileName	test
+/gate/output/ascii/setOutFileHitsFlag	1
+/gate/output/ascii/setOutFileSinglesFlag	0
+/gate/output/ascii/setOutFileCoincidencesFlag	0
+
+/gate/output/root/enable
+#/gate/output/root/setFileName	../root_files/9cm_from_center/16_phi_10MBb
+#/gate/output/root/setFileName	../root_files/center_1MeV_100MBq
+#/gate/output/root/setFileName	../root_files/beam_9cm/1_phi_511keV_2MBq
+/gate/output/root/setFileName	../root_files/test
+
+/gate/output/root/setRootHitFlag	1
+/gate/output/root/setRootSinglesFlag	0
+/gate/output/root/setRootCoincidencesFlag	0
+
+

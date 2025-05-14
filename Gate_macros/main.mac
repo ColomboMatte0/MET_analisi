@@ -1,0 +1,43 @@
+/control/execute verbose.mac
+
+/gate/geometry/setMaterialDatabase	GateMaterials.db
+
+/control/execute world.mac
+/control/execute prototipo.mac
+#/control/execute Phantom_IQ_micro.mac
+/control/execute fisica.mac
+
+/control/execute	output_Tesi.mac
+
+#/gate/actor/MyActor/save	Tesi_NN_{OutputName}.txt
+#/gate/output/ascii/setFileName	Tesi_NN_{OutputName}
+#/gate/output/root/setFileName	Tesi_NN_{OutputName}
+
+/gate/run/initialize
+
+#/control/execute sorgente_singola.mac
+#/control/execute sorgente_cylinder.mac
+/control/execute sorgente_singola_9cm.mac
+
+
+/control/execute visu.mac
+
+/gate/random/setEngineName	MersenneTwister
+/gate/random/setEngineSeed	auto
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+
+/gate/application/setTimeStart	0 s
+/gate/application/setTimeSlice	1 s
+/gate/application/setTimeStop	1 s 
+
+#/gate/application/setTimeStart	{StartTime} s
+#/gate/application/setTimeSlice	{SliceTime} s
+#/gate/application/setTimeStop	{StopTime} s 
+
+/gate/application/startDAQ	
+
+

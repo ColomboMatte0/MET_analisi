@@ -1,0 +1,11 @@
+/gate/world/daughters/name	fantoccio
+/gate/world/daughters/insert	cylinder
+/gate/fantoccio/setMaterial	Water
+/gate/fantoccio/vis/setColor	yellow
+/gate/fantoccio/vis/forceWireframe
+/gate/fantoccio/geometry/setRmax	5. cm
+/gate/fantoccio/geometry/setHeight	15 cm
+
+
+
+

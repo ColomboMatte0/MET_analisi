@@ -1,0 +1,82 @@
+/gate/world/daughters/name	cylindricalPET
+/gate/world/daughters/insert	cylinder
+/gate/cylindricalPET/placement/setTranslation	0.0 0.0 0.0 cm
+/gate/cylindricalPET/geometry/setRmax	12.45 cm			#0.1 mm di aria in mezzo a due submoduli 
+/gate/cylindricalPET/geometry/setRmin	10.0 cm
+/gate/cylindricalPET/geometry/setHeight	51.13 mm
+/gate/cylindricalPET/setMaterial	Air
+/gate/cylindricalPET/vis/forceWireframe	
+/gate/cylindricalPET/vis/setColor	white
+
+/gate/cylindricalPET/daughters/name	head
+/gate/cylindricalPET/daughters/insert	box
+/gate/head/placement/setTranslation	11.0 0.0 0.0 cm
+/gate/head/geometry/setXLength	20 mm
+/gate/head/geometry/setYLength	51.13 mm
+/gate/head/geometry/setZLength	51.13 mm
+/gate/head/setMaterial	Air
+/gate/head/vis/forceWireframe
+/gate/head/vis/setColor	white
+
+/gate/head/daughters/name	module
+/gate/head/daughters/insert	box
+/gate/module/placement/setTranslation	0.0 0.0 0.0 cm
+/gate/module/geometry/setXLength	20 mm
+/gate/module/geometry/setYLength	51.13 mm
+/gate/module/geometry/setZLength	51.13 mm
+/gate/module/setMaterial	Air
+/gate/module/vis/forceWireframe
+/gate/module/vis/setColor	yellow
+
+/gate/module/daughters/name	submodule
+/gate/module/daughters/insert	box
+/gate/submodule/placement/setTranslation	0.0 0.0 0.0 mm
+/gate/submodule/geometry/setXLength	20 mm
+/gate/submodule/geometry/setYLength	25.53 mm
+/gate/submodule/geometry/setZLength	25.53 mm
+/gate/submodule/setMaterial	Air
+/gate/submodule/vis/forceWireframe
+/gate/submodule/vis/setColor	blue
+
+/gate/submodule/daughters/name	cristallo
+/gate/submodule/daughters/insert	box
+/gate/cristallo/placement/setTranslation	0.0 0.0 0.0 mm
+/gate/cristallo/geometry/setXLength	20 mm
+/gate/cristallo/geometry/setYLength	1.53 mm
+/gate/cristallo/geometry/setZLength	1.53 mm
+/gate/cristallo/setMaterial	LSO
+/gate/cristallo/vis/setColor	green
+
+/gate/cristallo/repeaters/insert cubicArray
+/gate/cristallo/cubicArray/setRepeatNumberX 1
+/gate/cristallo/cubicArray/setRepeatNumberY 16
+/gate/cristallo/cubicArray/setRepeatNumberZ 16
+/gate/cristallo/cubicArray/setRepeatVector 0.0 1.6 1.6 mm
+
+/gate/submodule/repeaters/insert cubicArray
+/gate/submodule/cubicArray/setRepeatNumberX 1
+/gate/submodule/cubicArray/setRepeatNumberY 2
+/gate/submodule/cubicArray/setRepeatNumberZ 2
+/gate/submodule/cubicArray/setRepeatVector 0.0 25.6 25.6 mm
+
+/gate/module/repeaters/insert cubicArray
+/gate/module/cubicArray/setRepeatNumberX 1
+/gate/module/cubicArray/setRepeatNumberY 1
+/gate/module/cubicArray/setRepeatNumberZ 1
+/gate/module/cubicArray/setRepeatVector 0.0 0.0 0.0 mm
+
+/gate/head/repeaters/insert ring
+/gate/head/ring/setRepeatNumber	12
+
+/gate/systems/cylindricalPET/rsector/attach head
+/gate/systems/cylindricalPET/module/attach module
+/gate/systems/cylindricalPET/submodule/attach submodule
+/gate/systems/cylindricalPET/crystal/attach cristallo
+
+/gate/cristallo/attachCrystalSD
+/gate/systems/cylindricalPET/describe
+
+
+
+
+
